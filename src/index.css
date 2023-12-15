@@ -13,10 +13,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body{
-  background: var(--base-900-light, #121212);
-  overflow: hidden;
-}
 
 
 a {
@@ -33,6 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: var(--base-900-light, #121212);
 }
 
 h1 {
@@ -58,8 +55,7 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-nav ul li a{
+.navbar-nav ul li a{
   color: #f1f1f1 !important;
   font-size: 14px;
   font-style: normal;
@@ -77,6 +73,9 @@ nav ul li a{
 background: var(--primary-gold-300, #FDD649);
 display: flex;
 border: 2px solid #FDD649;
+width: 80%;
+text-align: center;
+justify-content: center;
   }
   .btn:hover{
     border:2px solid #FDD649;
@@ -86,6 +85,7 @@ border: 2px solid #FDD649;
   .form-control {
     background: var(--base-900-light, #121212);
     border-radius: 0px;
+    width: 80%;
    }
    
 
@@ -99,9 +99,76 @@ border: 2px solid #FDD649;
   border-bottom: 2px solid #888888 ;
   outline: none;
   background-color: transparent;
+  padding: 10px 0px;
  }
 
+ .main-heading h3{
+  color: var(--base-900-dark, #FEFEFE);
 
+/* text-2xl/font-bold$ */
+font-family: Space Grotesk;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px; /* 141.667% */
+ }
+ .main-heading span{
+  color: var(--base-800-dark, #CFCFCF);
+/* text-base/font-medium$ */
+font-family: Space Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+ }
+
+ .navbar>.container-fluid{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: flex-start;
+}
+.container-fluid{
+  padding-left: 10px;
+}
+
+@media (max-width: 1024px) { 
+  .navbar>.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+   }
+   .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+   
+   }
+   .navbar-nav li{
+    padding-right: 5px;
+   }
+
+
+}
+
+
+ @media (max-width: 576px) { 
+  .left-side img{
+    display: none;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  .btn{
+    width: 100%;
+  }
+  }
+
+@media (max-width: 768px) { 
+
+}
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -11,9 +11,9 @@ const GetStarted = () => {
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div className="right-side">
+                    <div className="right-side mt-5">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <div class="container-fluid">
+                            <div class="container-fluid ">
                                 <a class="navbar-brand" href="#"><img src={logoImg} alt="" /></a>
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
@@ -32,23 +32,24 @@ const GetStarted = () => {
                                 </ul>
                             </div>
                         </nav>
-                    </div>
 
-                    <div className="login-form">
-                        <div className="main-heading">
-                            <h3>Get Started</h3>
-                            <span>Start recruiting streetcred developers, Today!!</span>
+
+                        <div className="login-form m-2">
+                            <div className="main-heading">
+                                <h3>Get Started</h3>
+                                <span>Start recruiting streetcred developers, Today!!</span>
+                            </div>
+                            <form action="#">
+                                <div class="mt-4 mb-4">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name" />
+                                </div>
+                                <div class="mt-4 mb-5">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name" />
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-4 mb-4">Process</button>
+                            </form>
+                            <span>Already have an account?<a href="#">Log in</a></span>
                         </div>
-                        <form action="#">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name" />
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name" />
-                            </div>
-                            <button type="submit" class="btn btn-primary">Process</button>
-                        </form>
-                        <span>Already have an account?<a href="#">Log in</a></span>
                     </div>
                 </div>
             </div>
